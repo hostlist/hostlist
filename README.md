@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-<a href="https://github.com/hostlist/actions"><img src="https://github.com/hostlist/workflows/tests/badge.svg" alt="Build Status"></a>
+<a href="https://github.com/hostlist/actions"><img src="https://github.com/hostlist/workflows/tests.yml/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/hostlist/hostlist"><img src="https://img.shields.io/packagist/dt/hostlist/hostlist" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/hostlist/hostlist"><img src="https://img.shields.io/packagist/v/hostlist/hostlist" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/hostlist/hostlist"><img src="https://img.shields.io/packagist/l/hostlist/hostlist" alt="License"></a>
