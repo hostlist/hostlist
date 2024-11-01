@@ -2,3 +2,5 @@ NGINX_SERVER_NAME=hostlist.yafb.net
 
 BIND_ADDRESS=0.0.0.0
 PORT=8005
+
+ASSET_URL=https://hostlist.yafb.net
