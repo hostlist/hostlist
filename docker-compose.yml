@@ -3,6 +3,6 @@ services:
     apache:
         build: ./docker/apache
         ports:
-            - "8080:80"
+            - "8081:80"
         volumes:
             - ./public:/var/www/html
