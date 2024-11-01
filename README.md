@@ -1,4 +1,6 @@
-<p align="center"><a href="#" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Hostlist Logo"></a></p>
+<p align="center">
+<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Hostlist Logo">
+</p>
 
 <p align="center">
 <a href="https://github.com/hostlist/actions"><img src="https://github.com/hostlist/workflows/tests/badge.svg" alt="Build Status"></a>
@@ -9,35 +11,95 @@
 
 ## 🌐 About Hostlist
 
-**Hostlist** is your agency's ultimate tool for managing and tracking domains! 🚀 This platform allows you to keep all your digital assets in check and stay on top of domain renewals, SSL certificate statuses, and more—all in a secure and convenient way. Key features include:
-
-- 🔄 **Domain Renewal Tracking** to help you never miss a renewal.
-- 🔒 **SSL Certificate Monitoring** for ensuring your website's security.
-- 🚦 **Redirect & Domain Pairing Checks** to spot any anomalies or issues with www/non-www configurations.
-- ⚙️ **Quick Access to Provider Tools** for seamless DNS and FTP modifications across multiple providers.
-
-With Hostlist, security is a priority: no passwords are stored on our system. Plus, our tool can automatically detect domains registered to your account, making it easy to map out your entire web presence!
+**Hostlist** is a comprehensive domain management tool designed for agencies and professionals. It provides a centralized system to monitor and manage all your digital assets, ensuring you never miss a renewal or security update.
 
 ## ✨ Key Features
 
-- **Domain Renewal Tracking** 🔄: Never lose control of a domain by missing a renewal.
-- **SSL Certificate Status** 🔒: Monitor the validity of your SSL certificates for continuous security.
-- **Redirect & Anomaly Monitoring** 🚦: Quickly identify suspicious redirects or missing configurations for www/non-www versions of your domains.
-- **Quick Access to Management Tools** ⚙️: Easily access DNS and FTP sections of various providers to make changes with a few clicks.
-- **Digital Asset Mapping** 🌐: Discover and reconstruct all domains registered to you across the web for a comprehensive view of your digital footprint.
+- 🔄 **Domain Renewal Tracking**: Smart alerts for domain expirations
+- 🔒 **SSL Management**: Automatic certificate validity monitoring
+- 🚦 **Redirect Monitoring**: www/non-www configuration checks and anomaly detection
+- ⚙️ **Quick Access**: Integration with major providers for DNS and FTP management
+- 🌐 **Asset Mapping**: Automatic domain discovery across your accounts
+
+## 🛠️ Development
+
+### Requirements
+- PHP 8.1 or higher
+- Composer
+- Node.js and npm
+- MySQL/PostgreSQL database
+- Redis (optional, for caching)
+
+### Development Setup
+```bash
+# Clone the repository
+git clone https://github.com/yourusername/hostlist.git
+
+# Install PHP dependencies
+composer install
+
+# Install JavaScript dependencies
+npm install
+
+# Setup environment
+cp .env.example .env
+php artisan key:generate
+
+# Migrate database
+php artisan migrate
+
+# Start development server
+php artisan serve
+```
+
+### Tech Stack
+- **Backend**: Laravel 10.x
+- **Admin Panel**: Filament 3.x
+- **Database**: MySQL/PostgreSQL
+- **Task Queue**: Laravel Horizon
+- **Cache**: Redis
+
+### Project Structure
+```
+app/
+├── Filament/        # Filament panels and resources
+├── Models/          # Eloquent models
+├── Services/        # Business logic
+├── Jobs/           # Background jobs
+└── Policies/       # Authorization policies
+
+database/
+└── migrations/     # Database migrations
+```
+
+### Testing
+```bash
+# Run all tests
+php artisan test
+
+# Run specific test
+php artisan test --filter=DomainTest
+```
+
+### Custom Development
+Hostlist is built with extensibility in mind. You can:
+- Create custom Filament resources in `app/Filament/Resources`
+- Add new features by extending existing services in `app/Services`
+- Implement custom domain checks by extending the base monitor class
+- Create new dashboard widgets in `app/Filament/Widgets`
 
 ## 🔐 Security
-
-Hostlist is designed with security as the top priority. No passwords are saved in our system, so you can manage your assets confidently and securely! 💼
+Security is our top priority - no passwords are stored in the system, ensuring maximum protection of sensitive data.
 
 ## 🤝 Contributing
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Thank you for considering contributing to Hostlist! 🧑‍💻 Check out our contribution guide in the documentation to get started.
-
-## 🛡️ Reporting Security Vulnerabilities
-
-If you discover a security vulnerability within Hostlist, please send an email to our security team. We’ll handle all vulnerabilities with utmost priority. 🛠️
+## 📝 Bug Reports
+To report security vulnerabilities, please send an email to the security team instead of opening a public issue.
 
 ## 📜 License
-
-Hostlist is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT). 📄
+Hostlist is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
