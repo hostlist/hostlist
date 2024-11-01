@@ -1,2 +1,2 @@
-php: php artisan serve
-release: composer install --no-dev --optimize-autoloader
+release: composer install --no-dev --optimize-autoloader && php artisan serve
+
