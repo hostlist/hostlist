@@ -1,1 +1,1 @@
-php: php artisan serve
+release: php artisan serve
