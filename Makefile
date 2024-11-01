@@ -1,4 +1,5 @@
 
+.PHONY: website
 
 piku:
 	@git remote remove piku || true
@@ -6,6 +7,10 @@ piku:
 
 start:
 	@php artisan serve
+
+website:
+	@cat website/output.css > public/output.css
+	@cat website/index.html > resources/views/welcome.blade.php
 
 deploy:
 	@date > public/version.txt
