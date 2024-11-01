@@ -1,8 +1,0 @@
-services:
-
-    apache:
-        build: ./docker/apache
-        ports:
-            - "8081:80"
-        volumes:
-            - ./public:/var/www/html
