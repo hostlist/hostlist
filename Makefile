@@ -1,7 +1,7 @@
 
 
 piku:
-	@git remote add piku piku@piki.lab.tp.it:hostlist
+	@git remote add piku piku@piku.lab.tp.it:hostlist
 
 start:
 	@php artisan serve
