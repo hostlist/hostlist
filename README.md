@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Hostlist Logo">
+<img src="https://avatars.githubusercontent.com/u/186941888?v=4" width="200" alt="Hostlist Logo">
 </p>
 
 <p align="center">
