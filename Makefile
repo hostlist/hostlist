@@ -8,6 +8,7 @@ start:
 	@php artisan serve
 
 deploy:
+	@date > public/version.txt
 	@git add .
 	@git commit -am "Deploy"
 	@git push piku main
