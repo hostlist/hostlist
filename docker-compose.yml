@@ -1,0 +1,8 @@
+services:
+
+    apache:
+        build: ./docker/apache
+        ports:
+            - "8080:80"
+        volumes:
+            - ./public:/var/www/html
